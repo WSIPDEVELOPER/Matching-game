@@ -1,0 +1,70 @@
+*{
+    font-family: 'orbitron';
+}
+body{
+    padding: 50px;
+    padding-top: 100px;
+    background-color: rgb(116, 116, 216);
+    color: white;
+    font-weight: bolder;
+}
+.title {
+    font-size: 24px;
+  }
+  
+  .card {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    perspective: 1000px;
+    background-color: grey;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    background-color: grey;
+  }
+  
+  .card-inner.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .card-back {
+    background-color: grey;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .attempts {
+    margin-top: 20px;
+  }
+  .container{
+    max-width: 600px; /* Adjusted container width */
+    margin: auto; /* Center the container */
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
